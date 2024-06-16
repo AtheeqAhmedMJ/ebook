@@ -1,0 +1,124 @@
+/* Default styles */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Caslon Antique', serif;
+    background-color: #fbf5e3;
+    color: #070606;
+    line-height: 1.8;
+    font-size: 1.2em; /* Increase the font size */
+}
+
+.page-break {
+    page-break-after: always;
+    padding: 2em;
+    margin: 0;
+}
+
+.content {
+    padding: 3em; /* Increase padding for more spacing */
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    max-width: 800px;
+}
+
+.header, .chapter-title, .section-title, .sub-heading {
+    font-family: 'UnifrakturCook', serif;
+    font-size: 2.2em; /* Slightly increase font size */
+    text-align: center;
+    margin-bottom: 1.5em;
+    color: #8b4513;
+}
+
+.chapter-title {
+    font-size: 2.7em; /* Slightly increase font size */
+}
+
+.sub-heading {
+    font-size: 1.7em; /* Slightly increase font size */
+    margin-bottom: 0.7em;
+}
+
+.handwritten {
+    font-family: 'UnifrakturCook', serif;
+    font-size: 1.4em; /* Slightly increase font size */
+    color: #f50a0a;
+    margin-top: 1.2em;
+}
+
+.stamp {
+    display: block;
+    margin: 0 auto;
+    width: 170px; /* Increase size */
+    height: auto;
+}
+
+.content-epilogue, .content-disclaimer {
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 1.7em; /* Slightly increase font size */
+    text-align: center;
+    margin-top: 2.5em;
+    color: #8b4513;
+    font-style: italic;
+    page-break-after: always;
+}
+
+/* Make images responsive and add styles for a better look */
+img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #8b4513;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+    .content {
+        padding: 2.5em; /* Adjust padding for smaller screens */
+    }
+    .header, .chapter-title, .section-title, .sub-heading {
+        font-size: 2em; /* Adjust font size */
+    }
+    .chapter-title {
+        font-size: 2.5em; /* Adjust font size */
+    }
+    .sub-heading {
+        font-size: 1.5em; /* Adjust font size */
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding: 2em; /* Adjust padding for smaller screens */
+    }
+    .header, .chapter-title, .section-title, .sub-heading {
+        font-size: 1.8em; /* Adjust font size */
+    }
+    .chapter-title {
+        font-size: 2.3em; /* Adjust font size */
+    }
+    .sub-heading {
+        font-size: 1.3em; /* Adjust font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        padding: 1.5em; /* Adjust padding for smaller screens */
+    }
+    .header, .chapter-title, .section-title, .sub-heading {
+        font-size: 1.6em; /* Adjust font size */
+    }
+    .chapter-title {
+        font-size: 2em; /* Adjust font size */
+    }
+    .sub-heading {
+        font-size: 1.2em; /* Adjust font size */
+    }
+}
