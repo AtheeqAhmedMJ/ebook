@@ -1,4 +1,12 @@
-/* Default styles */
+/* @font-face rule for Caslon Antique */
+@font-face {
+    font-family: 'Caslon Antique';
+    src: url('font/CaslonAntique.ttf') format('truetype'); /* Update with correct path and format */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Reset default margin and padding */
 html, body {
     margin: 0;
     padding: 0;
@@ -231,36 +239,8 @@ iframe {
         font-size: 0.8em;
         padding: 8px 20px;
     }
-    /* Add these styles to ensure error messages are responsive */
 
-#error-message {
-    display: none;
-    text-align: center;
-    padding: 1em;
-    background-color: #f8f5e1; /* Match the background color */
-    color: #4e2b1f; /* Dark brown color */
-}
-
-#error-text {
-    font-family: 'UnifrakturCook', cursive;
-    font-size: 2em;
-    font-weight: bold;
-    margin-top: 2em;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    #error-text {
-        font-size: 1.5em; /* Adjust font size for smaller screens */
-        padding: 0.5em; /* Add padding for better spacing */
+    #error-message {
+        font-size: 5em;
     }
-}
-
-@media (max-width: 480px) {
-    #error-text {
-        font-size: 1.2em; /* Further adjust font size for phones */
-        padding: 0.5em; /* Ensure adequate padding */
-    }
-}
-
 }
