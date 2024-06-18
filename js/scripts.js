@@ -60,3 +60,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 1000);
     }
 });
+(function() {
+    var viewportMeta = document.querySelector('meta[name="viewport"]');
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        // Adjust the viewport for mobile devices to mimic desktop
+        viewportMeta.setAttribute('content', 'width=1200');
+    }
+})();
