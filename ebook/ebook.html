@@ -95,6 +95,14 @@
             <p><img src="/images/page14.png" alt="Image 6" style="width:100%; height:auto;"></p>
         </div>
     </div>
+    <script>     iframe.addEventListener('load', () => {        nextButton.style.display = 'block';
+    });
+
+    nextButton.addEventListener('click', () => {
+        mainContent.style.display = 'none';
+        errorMessage.style.display = 'block';
+        alternateErrorMessage();
+    }); </script>
 </body>
 </html>
 
