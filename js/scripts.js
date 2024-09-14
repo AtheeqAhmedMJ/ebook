@@ -16,14 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
         showScrollTutorial(); // Show the scroll tutorial
     });
 
-    iframe.addEventListener('load', () => {        nextButton.style.display = 'block';
-    });
 
-    nextButton.addEventListener('click', () => {
-        mainContent.style.display = 'none';
-        errorMessage.style.display = 'block';
-        alternateErrorMessage();
-    });
 
     function alternateErrorMessage() {
         const errorText = document.getElementById('error-text');
