@@ -8,6 +8,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const bgMusic = document.getElementById('bg-music');
     const scrollTutorial = document.getElementById('scroll-tutorial');
 
+    // Ensure nextButton is hidden initially
+    nextButton.style.display = 'none';
+
+    iframe.addEventListener('load', () => {
+        nextButton.style.display = 'block';
+    });
+
+    nextButton.addEventListener('click', () => {
+        mainContent.style.display = 'none';
+        errorMessage.style.display = 'block';
+        alternateErrorMessage();
+    });
+
     enterButton.addEventListener('click', () => {
         introScreen.style.display = 'none';
         mainContent.style.display = 'flex';
@@ -15,8 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
         createSmoke();  // Start the smoke animation when the main content is shown
         showScrollTutorial(); // Show the scroll tutorial
     });
-
-
 
     function alternateErrorMessage() {
         const errorText = document.getElementById('error-text');
@@ -53,6 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 1000);
     }
 });
+
 (function() {
     var viewportMeta = document.querySelector('meta[name="viewport"]');
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
