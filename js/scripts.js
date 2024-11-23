@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     enterButton.addEventListener('click', () => {
+        window.location.href = 'ebook.html';
         introScreen.style.display = 'none';
         mainContent.style.display = 'flex';
         bgMusic.play();
